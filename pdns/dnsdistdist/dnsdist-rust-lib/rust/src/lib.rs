@@ -2066,7 +2066,7 @@ mod dnsdistsettings {
         #[serde(default, skip_serializing_if = "crate::is_default")]
         options_to_skip: Vec<String>,
         #[serde(default, skip_serializing_if = "crate::is_default")]
-        skip_hashing_ar: bool,
+        payload_ranks: Vec<String>,
     }
 
     #[derive(Deserialize, Serialize, Debug, PartialEq)]
